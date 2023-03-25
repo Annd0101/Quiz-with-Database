@@ -1,0 +1,20 @@
+{
+    "dependencies": {
+        "express": "^4.18.2",
+        "mongo": "^0.1.0",
+        "node": "^19.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    },
+    "name": "a2_2001040001",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Nguyen Duc An",
+    "license": "ISC"
+
+}

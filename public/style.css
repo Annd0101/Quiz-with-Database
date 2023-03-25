@@ -1,0 +1,376 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+
+/*********************************************************************/
+
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* share components */
+
+
+/*********************************************************************/
+
+.course-name {
+    display: flex;
+    line-height: 80px;
+    justify-content: space-between;
+}
+
+#course-name {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+    margin-left: 0;
+}
+
+#mern-stack {
+    display: flex;
+    margin-top: 12px;
+}
+
+.stack-circle {
+    display: flex;
+    background-color: #ffee00;
+    font-weight: bold;
+    margin-left: 5px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-30deg);
+}
+
+#quiz-name {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-name h1 {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', cursive, 'Trebuchet MS';
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    max-width: 75%;
+    text-align: center;
+}
+
+
+/* author css */
+
+#introduction #author {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+
+/*********************************************************************/
+
+
+/* css content */
+
+
+/*********************************************************************/
+
+p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+h2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+/*********************************************************************/
+
+
+/* css box start */
+
+#box-start {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#btn-start {
+    margin-top: 36px;
+    margin-bottom: 18px;
+}
+
+
+/* css button */
+
+#btn-start button {
+    padding: 18px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+}
+
+#btn-start button:hover {
+    background-color: #0d8bf2;
+}
+
+
+/* screen 2 : quiz attempt */
+
+
+/*********************************************************************/
+
+
+/* css question box */
+
+.question-index {
+    margin-top: 30px;
+}
+
+.question-text {
+    margin-bottom: 30px;
+}
+
+.option {
+    display: block;
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 1px;
+    position: relative
+}
+
+.option input {
+    margin-right: 15px;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+.option-selected {
+    background-color: #ddd;
+}
+
+#box-submit {
+    background-color: #f1f1f1;
+    border: solid 1px #dcdcdc;
+    padding: 18px;
+    margin-top: 36px;
+    text-align: center;
+    margin-bottom: 18px
+}
+
+#btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+}
+
+#btn-submit:hover {
+    background-color: #46a049;
+}
+
+
+/*********************************************************************/
+
+
+/* screen 3: review quiz */
+
+
+/*********************************************************************/
+
+.correct-answer {
+    background-color: #d4edda;
+}
+
+.wrong-answer {
+    background-color: #f8d7da;
+}
+
+.option-correct {
+    background-color: #ddd
+}
+
+.sub-label {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-right: 10px;
+    padding: 5px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+
+
+/* box-result */
+
+#box-result {
+    background-color: #f1f1f1;
+    padding: 18px 0;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+}
+
+#box-result p {
+    font-size: 14px;
+    margin: 18px;
+}
+
+#box-result .correct-answers {
+    font-size: 24px;
+}
+
+#box-result .percentage {
+    font-weight: bold;
+}
+
+
+/* Try-again button*/
+
+#btn-try-again button {
+    background-color: #2196F3;
+    padding: 18px;
+    margin-top: 18px;
+    color: white;
+    border: 0px;
+}
+
+#btn-try-again button:hover {
+    background-color: #0d8bf2;
+}
+
+
+/*********************************************************************/
+
+
+/* responsive */
+
+
+/*********************************************************************/
+
+@media screen and (max-width: 700px) {
+    body {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #mern-stack {
+        display: none;
+    }
+}
+
+
+/*********************************************************************/
+
+
+/* confirm box */
+
+
+/*********************************************************************/
+
+.confirm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    animation-name: confirm---open;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm--close {
+    animation-name: confirm---close;
+}
+
+.confirm--window {
+    height: 120px;
+    width: 25%;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.75);
+    animation-name: confirm--window---open;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    text-align: center;
+}
+
+#btn-confirm {
+    padding: 5px;
+}
+
+#btn-cancel {
+    padding: 5px;
+}
+
+.confirm--window p {
+    margin-bottom: 30px;
+}
+
+@keyframes confirm---open {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes confirm---close {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes confirm--window---open {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/*********************************************************************/
